@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="stylesheet" href="/build/tailwind.css">
+  <title>Converter</title>
+</head>
+<body class="antialiased items-center">
+  <h1 class="text-center m-auto w-4/12 text-3xl mt-40">Binary to Decimal Converter</h1>
+  
+  <div class=' bg-gray-700 mt-10 text-center m-auto  items-center h-auto w-3/12 border-black border-2 rounded-lg border-solid py-4'>
+    <div class="text-center m-auto w-6/12 items-center ">
+    <p>Binary:   <input   type="text" id="binary" onchange="convert()" placeholder="enter a binary number"/></p>
+  </div>
+  
+  <div class="text-center m-auto w-6/12 items-center mt-2">
+    <p>Decimal: <input class=" " placeholder="result here" type="text" id="dec"  /></p><br>
+    <input class="bg-indigo-400 hover:bg-indigo-700 text-white font-bold items-center px-2 rounded" type="button" id="bttn" value="CONVERT" onclick="convert()">
+  </div>
+</div>
+<script src="main.js"></script>
+<h1 class=""></h1>
+</body>
+</html>
