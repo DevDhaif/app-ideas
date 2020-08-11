@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    
+    <h1 id="hh">Border Raduis Preivwer</h1>
+        
+    <label for="tl">Top left:</label>
+        <input type="range" id="tl" name="tl" style="rotate(90deg)" 
+        onchange="tr( 
+            document.getElementById('tr').value,
+            document.getElementById('tl').value,
+            document.getElementById('brl').value,
+            document.getElementById('bll').value
+        )"
+        min="0" max="200" value="0" step="1">
+      
+        <label for="tr">Top right:</label>
+        <input type="range" id="tr" name="tr" style="rotate(90deg)" 
+        onchange="tr( 
+            document.getElementById('tr').value,
+            document.getElementById('tl').value,
+            document.getElementById('brl').value,
+            document.getElementById('bll').value
+        )"
+        min="0" max="200" value="0" step="1">
+    </div>
+    <div id="surface">
+        <textarea id="code" >
+
+        </textarea>
+    
+    
+    </div>
+    <label for="brl">Bottom left:</label>
+    <input type="range" id="bll" name="bll" style="rotate(90deg)" 
+    onchange="tr( 
+        document.getElementById('tr').value,
+        document.getElementById('tl').value,
+        document.getElementById('brl').value,
+        document.getElementById('bll').value
+    )"
+    min="0" max="200" value="0" step="1">
+    <label for="bll">Bottom right:</label>
+    <input type="range" id="brl" name="brl" style="rotate(90deg)" 
+    onchange="tr( 
+        document.getElementById('tr').value,
+        document.getElementById('tl').value,
+        document.getElementById('brl').value,
+        document.getElementById('bll').value
+    )"
+    min="0" max="200" value="0" step="1">
+    <div>
+    <button onclick="copied()">Copy</button>
+</div>
+    <script src="main.js">
+
+    </script>
+</body>
+
+</html>

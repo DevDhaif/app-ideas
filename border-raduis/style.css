@@ -1,0 +1,25 @@
+body{
+    align-items: center;
+    background-color: lightblue;
+    text-align: center;
+}
+
+.border{
+    margin-top: 200px;
+    border-radius: 50PX;   
+}
+#code{
+    width: 50%;
+    height: 50%;
+    grid-row: auto;
+    font-size: 16px;
+}
+#tr {
+    width: 10em;
+    
+    margin-top: 2em;
+}
+#cowbell{
+    
+    width: 30em;
+}
