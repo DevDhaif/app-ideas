@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="stylesheet" href="/build/tailwind.css">
+  <script src="main.js"></script>
+  <title>Welcome to Tailwind!</title>
+</head>
+<body class="bg-gray-600 text-center items-center">
+  
+  <h1 class="bg-red-400 mb-16 mt-16 sm:bg-gray-200 sm:flex-auto sm:text-5xl sm:w-auto text-4xl">Calculator</h1>
+<div class="bg-red-400 m-auto w-auto text-center grid-rows-1 p-0 ">
+  <form name="form" class="w-auto">
+    <input id="num" class="textview bg-red-300 rounded-lg h-8 w-6/12  mt-4 mb-2  mr-2text-3xl  p-6" name="textview">
+  </form>
+    <table class="ml-48 border-2 ">
+      <tr>
+        <td><input class="w-20 h-10 text-2xl cursor-pointer  m-1 bg-gray-200 hover:bg-gray-400  rounded-lg px-1 py-1 md-2" onclick="c()" type="button" value="C"></td>
+        <td><input class="w-20 h-10 text-2xl cursor-pointer m-1 bg-gray-200 hover:bg-gray-400 rounded-lg px-1 py-1 md-2" onclick="back()" type="button" value="<"></td>
+        <td><input id="d" class="w-20 h-10 text-2xl cursor-pointer m-1 bg-gray-200 hover:bg-gray-400 rounded-lg px-1 py-1 md-2"onclick="insert('/')" type="button" value="/"></td>
+        <td><input id="m" class="w-20 h-10 text-2xl cursor-pointer m-1  rounded-full px-1 py-1 md-2"onclick="insert('*')" type="button" value="x"></td>
+      </tr>
+      <tr>
+        <td><input class="w-20 h-10 text-2xl cursor-pointer m-1 bg-gray-200 hover:bg-gray-400 rounded-lg px-1 py-1 md-2"onclick="insert(7)" type="button" value="7"></td>
+        <td><input class="w-20 h-10 text-2xl cursor-pointer m-1 bg-gray-200 hover:bg-gray-400 rounded-lg px-1 py-1 md-2"onclick="insert(8)" type="button" value="8"></td>
+        <td><input class="w-20 h-10 text-2xl cursor-pointer m-1 bg-gray-200 hover:bg-gray-400 rounded-lg px-1 py-1 md-2"onclick="insert(9)" type="button" value="9"></td>
+        <td><input class="w-20 h-10 text-2xl cursor-pointer m-1 bg-gray-200 hover:bg-gray-400 rounded-full px-1 py-1 md-2"onclick="insert('-')" type="button" value="-"></td>
+      </tr>
+      <tr>
+        <td><input class="w-20 h-10 text-2xl cursor-pointer m-1 bg-gray-200 hover:bg-gray-400 rounded-md border-2 px-1 py-1 md-2"onclick="insert(4)" type="button" value="4"></td>
+        <td><input class="w-20 h-10 text-2xl cursor-pointer m-1 bg-gray-200 hover:bg-gray-400 rounded-lg px-1 py-1 md-2"onclick="insert(5)" type="button" value="5"></td>
+        <td><input class="w-20 h-10 text-2xl cursor-pointer m-1 bg-gray-200 hover:bg-gray-400 rounded-lg px-1 py-1 md-2"onclick="insert(6)" type="button" value="6"></td>
+        <td><input class="w-20 h-10 text-2xl cursor-pointer m-1 bg-gray-200 hover:bg-gray-400 rounded-full px-1 py-1 md-2"onclick="insert('+')" type="button" value="+"></td>
+      </tr>
+      <tr>
+        <td><input class="w-20 h-10 text-2xl cursor-pointer m-1 bg-gray-200 hover:bg-gray-400 rounded-lg px-1 py-1 md-2 " onclick="insert(1)" type="button" value="1"></td>
+        <td><input class="w-20 h-10 text-2xl cursor-pointer m-1 bg-gray-200 hover:bg-gray-400 rounded-lg px-1 py-1 md-2" onclick="insert(2)" type="button" value="2"></td>
+        <td><input class="w-20 h-10 text-2xl cursor-pointer m-1 bg-gray-200 hover:bg-gray-400 rounded-lg px-1 py-1 md-2" onclick="insert(3)" type="button" value="3"></td>
+        <td><input class="w-20 h-10 text-2xl cursor-pointer m-1 bg-gray-200 hover:bg-gray-400 rounded-full px-1 py-1 md-2"onclick="result()" type="button" value="="></td>
+      </tr>
+      <tr>
+        <td colspan=2><input class="w-40 h-10 text-2xl  cursor-pointer  bg-gray-200 hover:bg-gray-400 rounded-lg   " onclick="insert(0)" type="button" value="0"></td>
+        <td colspan=2><input class="w-40 h-10 text-2xl  cursor-pointer m-1 bg-gray-200 hover:bg-gray-400 rounded-lg px-1 py-1 md-2" onclick="insert('.')" type="button" value="."></td>
+      </tr>
+    </table>
+  
+</div>
+</body>
+</html>
