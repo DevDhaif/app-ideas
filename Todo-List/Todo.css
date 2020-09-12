@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    height: 100%;
+    background-color: #111;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 100;
+    margin: 1rem 0 3rem;
+    text-align:center;
+    color: #fff; 
+    
+}
+@-webkit-keyframes glow {
+    from {
+      text-shadow:  10px 0px 10px #4cd675,0 0 5px #307006;
+    }
+    to {
+      text-shadow:0 0px 5px #0c8f37 ,0 0 7px #a3b8a9;
+    }
+  }
+.todo{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: lime;
+    font-family: 'Merriweather', serif;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+.input-div{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 600px;
+    min-width: 200px;
+    margin: auto;
+    height: 350px;
+    border-radius: 16px;
+    background-color: #17141d;
+    box-shadow: -1rem 0 3rem rgb(35, 148, 31);
+    transition: 0.6s;
+}
+.input-div input{
+    padding: 0.5rem 1rem;
+    text-align: center;
+    height: 50px;
+    outline: none;
+    border:none;
+    width: 450px;
+    border-radius: 25px;
+    background-color: rgb(245, 241, 241);
+    color:green;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+.add{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    outline: none;
+    margin-top: 1.5rem;
+    border: none;
+    background-color: rgb(255, 253, 253);
+    color: rgb(6, 138, 28);
+    
+}
